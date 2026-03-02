@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator | Sardar</title>
+    <!-- CSS LINK -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- JS LINK -->
+    <script src="./js/app.js" defer></script>
+    <!-- FONT-AWESOME CDN LINK -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head> 
+<body>
+    <div class="contianer">
+        <!-- HEADER -->
+        <header class="header">
+            <div class="logo-wrapper">
+                <div class="logo">
+                    <!-- icon fa-wand-magic -->🧙‍♀️
+                </div>
+                <h1>AI Image Generator</h1>
+            </div>
+
+            <button class="theme-toggle">
+                <!-- icon fa-moon -->
+            </button>
+        </header>
+
+        <div class="main-content">
+            <form action="#" class="prompt-form">
+                <!-- Prompt Container -->
+                <div class="prompt-contianer">
+                    <textarea class="prompt-input" placeholder="Describe your imagination in detail..." required autofocus></textarea>
+                    <button type="button" class="prompt-btn">
+                        <!-- icon fa-dice -->
+                    </button>
+                </div>
+
+                <!-- Prompt Actions/Buttons -->
+                 <div class="prompt-actions">
+                    <div class="select-wrapper">
+                        <select class="custom-select" required>
+                            <option value="" selected disabled>Select Model</option>
+                            <option value="">FLUX.1-dev</option>
+                            <option value="">FLUX.1-schnell</option>
+                            <option value="">Stable Diffusion XL</option>
+                            <option value="">Stable Diffusion v1.5</option>
+                            <option value="">Openjourney</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <select class="custom-select" required>
+                            <option value="" selected disabled>Image Count</option>
+                            <option value="1">1 Image</option>
+                            <option value="2">2 Images</option>
+                            <option value="3">3 Images</option>
+                            <option value="4">4 Images</option>
+                        </select>
+                    </div>
+
+                    <div class="select-wrapper">
+                        <select class="custom-select" required>
+                            <option value="" selected disabled>Aspect Ratio</option>
+                            <option value="1/1">Square (1:1)</option>
+                            <option value="16/9">Landscape (16:9)</option>
+                            <option value="9/16">Portrait (9:16)</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="generate-btn">
+                        <!-- icon fa-wand-sparkles -->
+                         Generate
+                    </button>
+                 </div>
+
+                 <!-- Reault Gallery Grid -->
+                 <div class="gallery-grid">
+                    <div class="img-card loading" >
+                        <div class="status-contianer">
+                            <div class="spinner"></div>
+                            <p class="status-txt">Generating...</p>
+                        </div>
+                        <img src="./images/app5.jpg" class="result-img" />
+                        <div class="img-overlay">
+                            <button class="img-download" >
+                                <!-- fa-downlaod -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-card">
+                        <img src="./images/app5.jpg" class="result-img" />
+                        <div class="img-overlay">
+                            <button class="img-download" >
+                                <!-- fa-downlaod -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-card">
+                        <img src="./images/app5.jpg" class="result-img" />
+                        <div class="img-overlay">
+                            <button class="img-download" >
+                                <!-- fa-downlaod -->
+                            </button>
+                        </div>
+                    </div>
+                    <div class="img-card">
+                        <img src="./images/app5.jpg" class="result-img" />
+                        <div class="img-overlay">
+                            <button class="img-download" >
+                                <!-- fa-downlaod -->
+                            </button>
+                        </div>
+                    </div>
+                 </div>
+            </form> 
+        </div>
+    </div>
+</body>
+</html>
